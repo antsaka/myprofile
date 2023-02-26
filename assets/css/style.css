@@ -13,8 +13,8 @@
 }
 
 *::selection {
-  background-color: #f1c40f;
-  color: #fff;
+  background-color: #040404;
+  color: #ffeded;
 }
 
 html {
@@ -27,15 +27,15 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-track {
-  background-color: #fff;
+  background-color: #EB455F;
 }
 
 html::-webkit-scrollbar-thumb {
-  background-color: #55460b;
+  background-color: #FCFFE7;
 }
 
 body{
-  background: #784545;
+  background: #ffffff;
   overflow-x: hidden;
   padding-left: 35rem;
 }
@@ -44,29 +44,51 @@ section{
     padding: 1rem;
 }
 .btn{
-    padding: 0.7rem 3rem;
-    background: #444444;
+    padding: 0.1rem 2rem;
+    background: #2B3467;
     color: #fff;
     cursor: pointer;
-    margin-top: 1rem;
+    margin-top: 2rem;
     font-size: 2rem;
     border-radius: 5rem;
+    box-shadow: 0 0 0.5rem 0.5rem #2B3467;
 }
 .btn i{
     padding: 0 .5rem;
     font-size: 1.8rem;
+    
 }
 .btn:hover{
-    background: #f1c40f;
-    color: #000;
+    background: #BAD7E9;
+    color: #ffffff;
+    border-radius: 5rem;
+    box-shadow: 0 0 0.5rem 0.5rem #BAD7E9;
+    
 }
+
+.heading{
+    text-align: center;
+    margin: 0 5rem;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: .2rem #EB455F solid;
+    color: #2B3467;
+
+}
+
+.heading span{
+    color: #EB455F;
+}
+
+
 header{
     position: fixed;
     top: 0; left: 0;
     z-index: 1000;
     height: 100%;
     width: 35rem;
-    background: #f1d6d6;
+    background: #2B3467;
+    box-shadow: 0 0 0.5rem #2B3467;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,17 +102,17 @@ header .profile img{
     border-radius: 50%;
     object-fit:cover;
     margin-bottom: 1rem;
-    border:.5rem #7f5e5e solid
+    border:.5rem #ffffff solid
 }
 
 header .profile .name{
     font-size: 3rem;
-    color: #55460b;
+    color: #ffffff;
 }
 
 header .profile .post{
     font-size: 2rem;
-    color: #55460b;
+    color: #ffffff;
 }
 
 header .navbar{
@@ -106,27 +128,28 @@ header .navbar ul li a{
     display: block;
     padding: 1rem;
     margin: 1.5rem 0;
-    background: #333;
-    color: #d1d0d0;
+    background: #3b3b3b;
+    color: #ffffff;
     font-size: 1.5rem;
     border-radius: 10rem;
 }
 
 header .navbar ul li a:hover{
-    background: #e6bd07;
-    color: #000000;
+    background: #EB455F;
+    color: #ffffff;
 }
 
 #menu{
     position: fixed;
     top: 2rem;right: 2rem;
-    background: #333;
-    color:#f1d6d6;
+    background: #EB455F;
+    color:#ffffff;
     cursor: pointer;
     font-size: 2.5rem;
-    padding: 1rem;
+    padding: 2rem;
     z-index: 1000;
     display: none;
+    border-radius: 50%;
 }
 
 .home{
@@ -140,24 +163,95 @@ header .navbar ul li a:hover{
 
 .home h3{
     font-size: 2.5rem;
-    color: #ffffff;
+    color: #000000;
 }
 
 .home h1{
     font-size: 5rem;
-    color: #ffffff;
+    color: #080808;
 }
 
 .home h1 span{
-    color: #e2ba1c;
+    color: #000000;
 }
 
 .home p{
     font-size: 1.5rem;
+    color: #000000;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 15 rem;
+    margin: 0 3rem 0 3rem;
+
+}
+.about .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    padding:2rem 0;
+}
+
+.about .row .info{
+    flex: 1 1 48rem;
+    padding: 2rem 1rem;
+    padding-left: 8rem;
+}
+.about .row .info h3{
+    font-size: 2rem;
+    color: #000000;
+    padding: 1rem 0;
+    font-weight: semi-bold;
+}
+
+.about .row .info span{
+    font-size: 2rem;
+    color: #EB455F;
+    padding: 1rem 0;
+    font-weight: semi-bold;
+}
+
+.about .row .counter{
+    flex: 1 1 48rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.about .row .box{
+    width:20rem;
+    background: #EB455F;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+.about .row .counter .box span{
+    font-size: 3rem;
     color: #ffffff;
 }
 
+.about .row .counter .box h3{
+    font-size: 2rem;
+    color: #ffffff;
+}
 
+footer{
+    background: #EB455F;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+}
+footer h2{
+    font-size: 2rem;
+    color: #ffffff;
+    padding: 1rem 0;
+    font-weight: semi-bold;
+}
 
 @media (max-width: 1200px){
   html{
@@ -196,3 +290,4 @@ header .navbar ul li a:hover{
     }
 
 }
+
